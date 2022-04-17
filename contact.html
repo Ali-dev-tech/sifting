@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <title>DATASIFTING</title>
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container flex justify-space-between">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="#">
+            </a>
+
+            <ul class="menu-list flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="demo.html">Demo</a></li>
+            </ul>
+
+            <div class="burger-menu">
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
+            </div>
+            <a href="contact.html" class="home-cta btn">Contact us</a>
+        </div>
+    </nav>
+
+
+    <!--CONTACT FORM-->
+    <section class="contact-page-form">
+        <div class="container flex justify-center">
+
+         <div class="form-content flex flex-column justify-center">
+             <h3>HAVE ANY QUESTIONS</h3>
+             <form>
+                 <div class="name-field flex" style="justify-items: flex-start;">
+                    <div class="first-name">
+                        <label for="name">First Name</label> <br>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    
+                    <div class="last-name">
+                        <label for="name">Last Name</label> <br>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    
+                 </div>
+
+                 <div class="subject-field flex" style="justify-items: flex-start;">
+                    <div class="email">
+                        <label for="email">Your Email</label> <br>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="subject">
+                        <label for="subject">Subject</label> <br>
+                        <input type="text" name="subject" id="subject">
+                    </div>
+
+                    
+                 </div>
+                 <div class="message-field">
+                    <label for="Message">Your Message</label> <br>
+                    <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="form-button flex" style="justify-content: flex-start;">
+                    <a href="#" class="btn">Send Message</a>
+                </div>
+             </form>
+         </div>
+
+        
+
+        </div>
+    </section>
+
+
+   
+    <!--SERVICES SECTION-->
+    <section style="display: none;" class="services flex justify-center flex-column" id="services">
+        <h4><u>Our Solutions</u></h4>
+        <h2>Services</h2>
+        <p>Here at Data Sifting, our highest priority is you. We want to serve you with nothing short of the best and
+            most efficient. We specialise in the following areas and, with our grit, our passion for the work, and a
+            combined experience of over 35 years in the industry, we promise to deliver high quality and robust
+            solutions to any of your software needs.</p>
+        <div class="container grid">
+            <div class="services-card flex flex-column">
+                <img src="images/software-design.png" alt="#">
+                <h2>Software Design</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, commodi! Reprehenderit earum dolorum
+                    illo nam.</h3>
+                <button href="#" class="btn modal-btn" data-modal-target="#modal">read more</button>
+                <div class="modal-1 modal" id="modal">
+                    <div class="modal-header">
+                        <div class="title">Sofware Design</div>
+                        <button data-close-button class="close-btn">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum sequi ab nihil, ut quae in modi
+                        atque hic ipsa cum et odio mollitia iste numquam sed quos, optio fugiat? Aliquid dicta quibusdam
+                        adipisci molestiae, cumque corrupti non repellat eum assumenda at eligendi velit necessitatibus
+                        tempora. Perspiciatis debitis voluptatibus odio exercitationem tenetur ab explicabo cupiditate
+                        aliquam earum, dolore asperiores deleniti similique.
+                    </div>
+                </div>
+                <div id="overlay"></div>
+            </div>
+
+            <div class="services-card flex flex-column">
+                <img src="images/dashboard.png" alt="#">
+                <h2>Custom Dashboards</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, commodi! Reprehenderit earum dolorum
+                    illo nam.</h3>
+                <button href="#" class="btn modal-btn-2" data-modal-target="#modal">read more</button>
+                <div class="modal modal-2" id="modal">
+                    <div class="modal-header">
+                        <div class="title">Custom Dashboards</div>
+                        <button data-close-button class="close-btn-2">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum sequi ab nihil, ut quae in modi
+                        atque hic ipsa cum et odio mollitia iste numquam sed quos, optio fugiat? Aliquid dicta quibusdam
+                        adipisci molestiae, cumque corrupti non repellat eum assumenda at eligendi velit necessitatibus
+                        tempora. Perspiciatis debitis voluptatibus odio exercitationem tenetur ab explicabo cupiditate
+                        aliquam earum, dolore asperiores deleniti similique.
+                    </div>
+                </div>
+                <div id="overlay"></div>
+            </div>
+
+            <div class="services-card flex flex-column">
+                <img src="images/pos.png" alt="#">
+                <h2>Point of Sales System</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, commodi! Reprehenderit earum dolorum
+                    illo nam.</h3>
+                <button href="#" class="btn modal-btn-3" data-modal-target="#modal">read more</button>
+                <div class="modal-3 modal" id="modal">
+                    <div class="modal-header">
+                        <div class="title">Point of Sales System</div>
+                        <button data-close-button class="close-btn-3">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum sequi ab nihil, ut quae in modi
+                        atque hic ipsa cum et odio mollitia iste numquam sed quos, optio fugiat? Aliquid dicta quibusdam
+                        adipisci molestiae, cumque corrupti non repellat eum assumenda at eligendi velit necessitatibus
+                        tempora. Perspiciatis debitis voluptatibus odio exercitationem tenetur ab explicabo cupiditate
+                        aliquam earum, dolore asperiores deleniti similique.
+                    </div>
+                </div>
+                <div id="overlay"></div>
+            </div>
+
+            <div class="services-card flex flex-column">
+                <img src="images/software-development.png" alt="#">
+                <h2>Software Development</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, commodi! Reprehenderit earum dolorum
+                    illo nam.</h3>
+                <button href="#" class="btn modal-btn-4" data-modal-target="#modal">read more</button>
+                <div class="modal modal-4" id="modal">
+                    <div class="modal-header">
+                        <div class="title">Software Development</div>
+                        <button data-close-button class="close-btn-4">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum sequi ab nihil, ut quae in modi
+                        atque hic ipsa cum et odio mollitia iste numquam sed quos, optio fugiat? Aliquid dicta quibusdam
+                        adipisci molestiae, cumque corrupti non repellat eum assumenda at eligendi velit necessitatibus
+                        tempora. Perspiciatis debitis voluptatibus odio exercitationem tenetur ab explicabo cupiditate
+                        aliquam earum, dolore asperiores deleniti similique.
+                    </div>
+                </div>
+                <div id="overlay"></div>
+            </div>
+
+            <div class="services-card flex flex-column">
+                <img src="images/garage-systems.png" alt="#">
+                <h2>Risk Management Systems</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, commodi! Reprehenderit earum dolorum
+                    illo nam.</h3>
+                <button href="#" class="btn modal-btn-5" data-modal-target="#modal">read more</button>
+                <div class="modal modal-5" id="modal">
+                    <div class="modal-header">
+                        <div class="title">Risk Management System</div>
+                        <button data-close-button class="close-btn-5">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum sequi ab nihil, ut quae in modi
+                        atque hic ipsa cum et odio mollitia iste numquam sed quos, optio fugiat? Aliquid dicta quibusdam
+                        adipisci molestiae, cumque corrupti non repellat eum assumenda at eligendi velit necessitatibus
+                        tempora. Perspiciatis debitis voluptatibus odio exercitationem tenetur ab explicabo cupiditate
+                        aliquam earum, dolore asperiores deleniti similique.
+                    </div>
+                </div>
+                <div id="overlay"></div>
+            </div>
+
+            <div class="services-card flex flex-column">
+                <img src="images/risk.png" alt="#">
+                <h2>Garage Systems</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, commodi! Reprehenderit earum dolorum
+                    illo nam.</h3>
+                <button href="#" class="btn modal-btn-6" data-modal-target="#modal">read more</button>
+                <div class="modal modal-6" id="modal">
+                    <div class="modal-header">
+                        <div class="title">Garage Systems</div>
+                        <button data-close-button class="close-btn-6">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum sequi ab nihil, ut quae in modi
+                        atque hic ipsa cum et odio mollitia iste numquam sed quos, optio fugiat? Aliquid dicta quibusdam
+                        adipisci molestiae, cumque corrupti non repellat eum assumenda at eligendi velit necessitatibus
+                        tempora. Perspiciatis debitis voluptatibus odio exercitationem tenetur ab explicabo cupiditate
+                        aliquam earum, dolore asperiores deleniti similique.
+                    </div>
+                </div>
+                <div id="overlay"></div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!--CONTACT CONTENT-->
+    <section class="contact flex justify-center flex-column" id="contact">
+        <h5><u>Get in touch</u></h5>
+        <h2>We will clear all your queries regarding scalable softwares used
+            for commercial purposes
+        </h2>
+        <div class="container grid">
+            <div class="contact-info grid">
+                <div class="left-bar">
+                   
+                    <h4>For queries use the contact information
+                        given below
+                    </h4>
+
+                    <div class="contact-content">
+                        <div class="location flex">
+
+                            <div class="content-img">
+                                <img src="images/location.png" alt="Location">
+                            </div>
+                            <div class="content">
+                                <h3>LOCATION</h3>
+                                <p>Opal Tower Business Bay Al Uhood Street
+                                    Office Number 5, Floor 309
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                        <div class="location flex" style="justify-content: flex-start;">
+
+                            <div style="background: none; border: 1px solid #E4E4E4;" class="content-img">
+                                <img src="images/call.png" alt="Location">
+                            </div>
+                            <div class="content">
+                                <h3>PHONE</h3>
+                                <p>Call us at 97152861998</p>
+                            </div>
+
+
+                        </div>
+
+                        <div class="location flex" style="justify-content: flex-start;">
+
+                            <div class="content-img">
+                                <img src="images/email.png" alt="Location">
+                            </div>
+                            <div>
+                                <h3>EMAIL</h3>
+                                <p>Email us at info@datasifting.com</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="right-bar">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.5207192475345!2d55.273495015009324!3d25.185656283901515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6831f6693c85%3A0xb5b269f7897f4978!2sOpal%20Tower%20-%20Business%20Bay%20-%20Dubai!5e0!3m2!1sen!2sae!4v1649497844090!5m2!1sen!2sae"
+                        width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+     <!---FOOTER SECTION-->
+     <section class="footer">
+        <div class="container grid">
+            <div class="grid-1 footer-grid flex flex-column">
+                <div class="logo">
+                    <img src="images/logo.png" alt="LOGO">
+                </div>
+                <div class="footer-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ex nisi culpa quis.</p>
+                </div>
+                <div class="footer-icons flex justify-space-between">
+                    <a href="#">
+                        <img src="images/Facebook.png" alt="#">
+                    </a>
+                    <a href="#">
+                        <img src="images/Instagram.png" alt="#">
+                    </a>
+                    <a href="#">
+                        <img src="images/linkedin.png" alt="#">
+                    </a>
+                   <a href="#">
+                    <img src="images/Twiterr.png" alt="#">
+                   </a>
+                </div>
+            </div>
+
+            <div class="grid-2 footer-grid flex flex-column">
+                <div class="grid-title">
+                   <h2>Our Services</h2>
+                </div>
+                <div class="footer-text">
+                    <ul>
+                        <li>Software Development</li>
+                        <li>Software Design</li>
+                        <li>Garage Systems</li>
+                        <li>Risk Management Systems</li>
+                        <li>Point of Sales System</li>
+                        <li>Custom Dasboards</li>
+                    </ul>
+                    
+                </div>
+               
+            </div>
+
+            <div class="grid-3 footer-grid flex flex-column">
+                <div class="grid-title">
+                    <h2>Quick Links</h2>
+                </div>
+                <div class="footer-text">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="container flex justify-center">
+            <h3>Copyright 2022 DataSifting</h3>
+        </div>
+
+    </footer>
+
+
+    <!--UX COMPONENTS-->
+    <a class="scroll-up" href="#">
+        <img src="images/arrow (2).png" alt="arrow">
+    </a>
+
+
+    <div class="scroll-up-2">
+        <img src="images/message.png" class="lead-form-icon" alt="messsage">
+    </div>
+
+
+
+    <div class="lead-form flex justify-center">
+        <form class="flex flex-column justify-center">
+
+            <h3>PLease fill out the form below</h3>
+
+            <label for="name">Your Name</label> <br>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="name">Your Email</label> <br>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="message">Your Message</label> <br>
+            <textarea name="message" id="message" cols="20" rows="5"></textarea> <br>
+            <div class="lead-form-cta flex justify-space-between">
+                <button class="btn submit-btn">Submit</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>

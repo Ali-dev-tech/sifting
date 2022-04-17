@@ -1,0 +1,399 @@
+/*CSS FILES*/
+@import url(home.css);
+
+
+/*FONT LINKS*/
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700;800;900&display=swap');
+
+/*COLOR SCHEME*/
+
+:root {
+    --linear-bg: linear-gradient(356.78deg, rgba(39, 39, 46, 0.6445) 2.9%, rgba(114, 114, 114, 0.0072) 162.82%);
+    --white: #E4E4E4;
+    --subtext-color: #75DAB4;
+    --light-bg: #191A1C;
+    --dark-bg: #0B0B0B;
+    --grey:#5F6062;
+
+    --clr-primary-400: 263 55% 52%;
+    --clr-secondary-400: 217 19% 35%;
+    --clr-secondary-500: 219 29% 14%;
+    --clr-neutral-100: 0 0% 100%;
+    --clr-neutral-200: 210 46% 95%;
+    --clr-neutral-300: 0 0% 81%;
+  
+    --ff-primary: "Barlow Semi Condensed", sans-serif;
+  
+    --fw-400: 500;
+    --fw-700: 600;
+  
+    --fs-300: 0.6875rem;
+    --fs-400: 0.8125rem;
+    --fs-500: 1.25rem;
+
+
+
+}
+
+
+/*CSS RESETS*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Saira', sans-serif;
+    transition: all .3s ease;
+    scroll-behavior: smooth;
+
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+  
+}
+
+button{
+    cursor: pointer;
+    background: transparent;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/*REUSABLES*/
+.container,.nav-container {
+    padding: .5rem 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+    gap: 3rem;
+    place-items: center;
+}
+
+.btn {
+    color: #FFFFFF;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 8px 18px;
+
+}
+
+.btn:hover {
+    background-color: var(--white);
+    color: var(--dark-bg);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*REUSABLE COMPONENTS*/
+
+/*NAVBAR*/
+
+.navbar {
+    background: var(--light-bg);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.burger-menu span {
+    background: var(--white);
+    width: 100%;
+    height: 2px;
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    gap: 6px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.menu-list a {
+    padding: 15px 25px;
+    color: var(--white);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.menu-list a:hover,
+.menu-list a.active {
+    color: var(--subtext-color);
+    background: var(--linear-bg);
+}
+
+
+
+/*FOOTER*/
+
+.footer {
+    background: var(--dark-bg);
+    border-bottom: 1px solid var(--white);
+    border-top: 1px solid var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .container {
+    grid-template-columns:repeat(3,1fr);
+     background-color: var(--dark-bg);
+     place-items: center;
+     color: var(--white);
+     width: 100%;
+    
+     
+   
+ }
+
+ .footer-grid {
+     max-width: 100%;
+    
+ }
+
+ .footer ul {
+     list-style: none;
+    }
+
+    .footer li {
+        color: var(--white);
+    }
+
+    .footer li a:hover{
+        color: var(--subtext-color);
+    }
+
+    .grid-1, .grid-2,.grid-3 {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .grid-1 p {
+        margin: 1rem 0;
+    }
+
+    .footer-grid h2{
+        margin-left: 1rem;
+    }
+
+
+ .footer a {
+     text-decoration:  none;
+     color: var(--white);
+     text-align: center;
+ }
+.footer img{
+    width: 80%;
+}
+
+
+
+
+
+
+footer {
+    padding: 2rem 0;
+    background: var(--dark-bg);
+    color: var(--white);
+    flex-wrap: wrap;
+}
+
+footer h3 {
+    font-family: Saira;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+footer a {
+    color: var(--white);
+     font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+
+/*TEAM*/
+.team {
+    background: var(--dark-bg);
+    padding: 3rem 1rem;
+}
+
+.team h2,
+.testimonials h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 63px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+.team .name {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-400);
+    line-height: 1;
+}
+
+.testimonial .position {
+    font-size: var(--fs-300);
+    opacity: 0.5;
+  }
+  
+  .testimonial > p:first-of-type {
+    font-size: var(--fs-500);
+    line-height: 1.2;
+  }
+  
+  .testimonial > p:last-of-type {
+    opacity: 0.7;
+  }
+
+  .testimonial {
+    font-size: var(--fs-400);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
+    background: var(--light-bg);
+    color: var(--white);
+  }
+
+  article p {
+      padding: 7px 3px;
+  }
+
+
+ .grid-3 ul {
+     flex-direction: column !important;
+ }
+
+ .footer-icons img {
+     width: 30px;
+    }
+
+
+@media (max-width:600px){
+    .content-img {
+      
+      width: 75px; 
+    }
+}
+
+    
